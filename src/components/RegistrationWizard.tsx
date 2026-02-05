@@ -31,8 +31,6 @@ const initialData: FormData = {
 
 const yearOptions = [
   { value: "1st", label: "1st Year" },
-  { value: "2nd", label: "2nd Year" },
-  { value: "3rd", label: "3rd Year" },
 ];
 
 const branchOptions = [
@@ -40,9 +38,6 @@ const branchOptions = [
   { value: "it", label: "Information Technology" },
   { value: "ece", label: "Electronics & Communication" },
   { value: "eee", label: "Electrical Engineering" },
-  { value: "mech", label: "Mechanical Engineering" },
-  { value: "civil", label: "Civil Engineering" },
-  { value: "other", label: "Other" },
 ];
 
 const RegistrationWizard = () => {
@@ -147,7 +142,7 @@ const RegistrationWizard = () => {
           </div>
           <div>
             <h1 className="text-base font-bold tracking-wider uppercase font-display">
-              System Access Protocol
+              WLUG MEMBER BOARD 2 REGISTRATION
             </h1>
             <p className="text-xs text-muted-foreground font-mono">
               STEP_{step}_OF_4
@@ -160,9 +155,8 @@ const RegistrationWizard = () => {
           {[1, 2, 3, 4].map((s) => (
             <div
               key={s}
-              className={`h-1 flex-1 transition-all duration-300 ${
-                s <= step ? "bg-primary" : "bg-white/10"
-              }`}
+              className={`h-1 flex-1 transition-all duration-300 ${s <= step ? "bg-primary" : "bg-white/10"
+                }`}
             />
           ))}
         </div>
@@ -244,7 +238,7 @@ const RegistrationWizard = () => {
                 error={errors.branch}
               />
               <FloatingInput
-                label="PRN / ID Number"
+                label="PRN"
                 value={formData.prn}
                 onChange={(e) => updateField("prn", e.target.value)}
                 error={errors.prn}

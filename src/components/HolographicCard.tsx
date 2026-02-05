@@ -54,16 +54,13 @@ const HolographicCard = ({ name, email }: HolographicCardProps) => {
               </span>
             </div>
           </div>
-
-          {/* QR Code */}
+          {/* QR Code Container */}
           <div className="flex-shrink-0">
-            <div className="p-3 bg-white rounded-lg">
-              <QRCodeSVG
-                value={`wlug:${memberId}:${email}`}
-                size={100}
-                level="H"
-                fgColor="#000000"
-                bgColor="#ffffff"
+            <div className="p-2 bg-white rounded-lg w-32 h-32 flex items-center justify-center">
+              <img
+                src="/wlugqr.jpeg"
+                alt="WLUG QR Code"
+                className="w-full h-full object-contain rounded"
               />
             </div>
           </div>
@@ -72,7 +69,7 @@ const HolographicCard = ({ name, email }: HolographicCardProps) => {
         {/* Footer */}
         <div className="mt-6 pt-4 border-t border-white/10">
           <p className="text-xs text-muted-foreground text-center">
-            Phase 3 Recruitment • {new Date().toLocaleDateString()}
+            Member Board 2 Recruitment • {new Date().toLocaleDateString()}
           </p>
         </div>
 

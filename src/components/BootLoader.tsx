@@ -7,11 +7,11 @@ interface BootLoaderProps {
 
 const bootMessages = [
   { text: "> INITIALIZING KERNEL...", delay: 0 },
-  { text: "> LOADING MODULES... [OK]", delay: 600 },
-  { text: "> MOUNTING FILESYSTEMS... [OK]", delay: 1200 },
-  { text: "> ESTABLISHING SECURE CONNECTION...", delay: 1800 },
-  { text: "> AUTHENTICATING NETWORK NODES...", delay: 2400 },
-  { text: "> SYSTEM READY", delay: 3000 },
+  { text: "> LOADING MODULES... [OK]", delay: 800 },
+  { text: "> MOUNTING FILESYSTEMS... [OK]", delay: 1400 },
+  { text: "> ESTABLISHING SECURE CONNECTION...", delay: 2000 },
+  { text: "> AUTHENTICATING NETWORK NODES...", delay: 2600 },
+  { text: "> SYSTEM READY", delay: 3200 },
 ];
 
 const BootLoader = ({ onComplete }: BootLoaderProps) => {

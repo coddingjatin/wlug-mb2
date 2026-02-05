@@ -3,6 +3,8 @@ import { AnimatePresence } from "framer-motion";
 import BootLoader from "@/components/BootLoader";
 import LandingPage from "@/components/LandingPage";
 import RegistrationModal from "@/components/RegistrationModal";
+import RecruitmentSection from "@/components/RecruitmentSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const [isBooting, setIsBooting] = useState(true);
@@ -20,7 +22,6 @@ const Index = () => {
     setIsRegistrationOpen(false);
   }, []);
 
-  // Handle ESC key to close modal
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape" && isRegistrationOpen) {
@@ -33,8 +34,7 @@ const Index = () => {
   }, [isRegistrationOpen, handleCloseRegistration]);
 
   return (
-    <div className="fixed inset-0 bg-background overflow-hidden">
-      {/* Texture overlays */}
+    <div className="bg-background min-h-screen">
       <div className="scanline-overlay" />
       <div className="noise-overlay" />
 
@@ -43,12 +43,21 @@ const Index = () => {
         {isBooting && <BootLoader onComplete={handleBootComplete} />}
       </AnimatePresence>
 
-      {/* Main Landing Page */}
+      {/* Main Content */}
       {!isBooting && (
-        <LandingPage
-          onOpenRegistration={handleOpenRegistration}
-          isBlurred={isRegistrationOpen}
-        />
+        <main className="flex flex-col w-full relative">
+          <LandingPage
+            onScrollToRecruitment={() => {
+              const element = document.getElementById("recruitment-section");
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            isBlurred={isRegistrationOpen}
+          />
+          <RecruitmentSection onOpenRegistration={handleOpenRegistration} />
+          <Footer />
+        </main>
       )}
 
       {/* Registration Modal */}
