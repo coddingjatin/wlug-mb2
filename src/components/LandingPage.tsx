@@ -207,7 +207,6 @@ const HUDElements = ({
         <div className="flex items-center gap-3 px-4 py-2 bg-black/40 border border-white/10 rounded">
           <Users className="w-4 h-4 text-primary" />
           <span className="text-xs font-mono text-muted-foreground">
-            NETWORK: <span className="text-primary">500+ NODES</span>
           </span>
         </div>
       </motion.div>

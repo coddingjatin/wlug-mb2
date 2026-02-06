@@ -3,7 +3,6 @@ import { Shield, CheckCircle } from "lucide-react";
 
 interface HologramProps {
   name: string;
-  email: string;
 }
 
 const Hologram = ({ name }: HologramProps) => {
@@ -11,12 +10,12 @@ const Hologram = ({ name }: HologramProps) => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-      className="w-[320px] mx-auto"
+      initial={{ opacity: 0, y: 20, scale: 0.95 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ duration: 0.4 }}
+      className="mt-10 flex justify-center"
     >
-      <div className="glass-card holographic border-glow rounded-xl px-6 py-5 relative overflow-hidden">
+      <div className="w-[320px] glass-card holographic border-glow rounded-xl px-6 py-5 relative overflow-hidden">
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-2">
@@ -33,19 +32,15 @@ const Hologram = ({ name }: HologramProps) => {
           <p className="text-[11px] uppercase tracking-wider text-muted-foreground">
             Member Name
           </p>
-          <p className="text-lg font-bold text-glow truncate">
-            {name}
-          </p>
+          <p className="text-lg font-bold truncate">{name}</p>
         </div>
 
-        {/* Access ID */}
+        {/* Member ID */}
         <div className="mb-4">
           <p className="text-[11px] uppercase tracking-wider text-muted-foreground">
-            Access ID
+            Member ID
           </p>
-          <p className="text-xs font-mono text-primary">
-            {memberId}
-          </p>
+          <p className="text-xs font-mono text-primary">{memberId}</p>
         </div>
 
         {/* Status + QR */}
@@ -64,12 +59,10 @@ const Hologram = ({ name }: HologramProps) => {
           </div>
         </div>
 
-        {/* Footer */}
         <p className="text-[10px] text-muted-foreground text-center mt-4">
           WLUG • Member Board 2 Recruitment
         </p>
 
-        {/* Glow */}
         <div className="absolute -top-6 -right-6 w-24 h-24 bg-primary/20 rounded-full blur-2xl pointer-events-none" />
       </div>
     </motion.div>
