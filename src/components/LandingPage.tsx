@@ -177,8 +177,8 @@ const HUDElements = ({
             <Terminal className="w-5 h-5 text-primary" />
           </div>
           <div>
-            <div className="text-sm font-display font-bold text-foreground">Walchand Linux Users' Group</div>
-            <div className="text-xs text-muted-foreground font-mono">MB.2.0</div>
+            <div className="text-sm font-display font-bold text-foreground">WLUG</div>
+            <div className="text-xs text-muted-foreground font-mono">V.2.0</div>
           </div>
         </div>
       </motion.div>
