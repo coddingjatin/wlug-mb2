@@ -196,7 +196,7 @@ const RegistrationWizard = () => {
         x: shakeCard ? [0, -10, 10, -10, 10, 0] : 0,
       }}
       transition={{ duration: 0.5 }}
-      className="w-full max-w-lg mx-auto overflow-hidden"
+      className="w-full max-w-lg mx-auto overflow-hidden px-4"
     >
       {/* Header */}
       <div className="mb-6">
@@ -320,7 +320,7 @@ const RegistrationWizard = () => {
                   Step 3: Document Upload
                 </h2>
               </div>
-              
+
               {/* Profile Photo Input */}
               <div className="space-y-2">
                 <label className="text-xs text-primary uppercase tracking-wider block">Profile Photo</label>
@@ -402,7 +402,7 @@ const RegistrationWizard = () => {
                 <div className="flex justify-between py-2 border-b border-white/10">
                   <span className="text-muted-foreground">Documents</span>
                   <span className="font-medium text-right">
-                    {formData.profilePhoto?.name} <br/>
+                    {formData.profilePhoto?.name} <br />
                     {formData.resume?.name}
                   </span>
                 </div>
@@ -435,8 +435,8 @@ const RegistrationWizard = () => {
             <ArrowRight className="w-4 h-4" />
           </button>
         ) : (
-          <button 
-            onClick={handleSubmit} 
+          <button
+            onClick={handleSubmit}
             disabled={isSubmitting}
             className={`cyber-button-solid py-3 px-6 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
           >

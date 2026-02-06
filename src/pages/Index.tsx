@@ -45,7 +45,7 @@ const Index = () => {
 
       {/* Main Content */}
       {!isBooting && (
-        <main className="flex flex-col w-full relative">
+        <main className="flex flex-col w-full relative overflow-x-hidden">
           <LandingPage
             onScrollToRecruitment={() => {
               const element = document.getElementById("recruitment-section");

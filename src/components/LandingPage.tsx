@@ -46,7 +46,7 @@ const LandingPage = ({ onScrollToRecruitment, isBlurred }: LandingPageProps) => 
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="mb-8"
+          className="mb-8 md:mb-8"
         >
           <div className="relative">
             <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
@@ -54,7 +54,7 @@ const LandingPage = ({ onScrollToRecruitment, isBlurred }: LandingPageProps) => 
               <img
                 src="/wlug-logo.jpeg"
                 alt="WLUG Logo"
-                className="w-28 h-28 object-contain rounded-full"
+                className="w-20 h-20 md:w-28 md:h-28 object-contain rounded-full"
               />
             </div>
           </div>
@@ -65,7 +65,7 @@ const LandingPage = ({ onScrollToRecruitment, isBlurred }: LandingPageProps) => 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="text-3xl md:text-5xl font-bold font-display text-center mb-4 glitch-text cursor-default"
+          className="text-2xl md:text-5xl font-bold font-display text-center mb-4 glitch-text cursor-default"
         >
           <span className="text-glow">WALCHAND</span>
           <span className="text-secondary ml-4">LINUX USERS' GROUP</span>
@@ -111,7 +111,7 @@ const LandingPage = ({ onScrollToRecruitment, isBlurred }: LandingPageProps) => 
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.98 }}
           onClick={onScrollToRecruitment}
-          className="group relative px-10 py-5 bg-primary/10 border-2 border-primary text-primary font-bold uppercase tracking-[0.2em] font-mono pulse-button transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
+          className="group relative px-10 py-5 bg-primary/10 border-2 border-primary text-primary font-bold uppercase tracking-[0.2em] font-mono pulse-button transition-all duration-300 hover:bg-primary hover:text-primary-foreground mb-20 md:mb-0"
         >
           <span className="relative z-10 flex items-center gap-3">
             <span className="text-primary/60 group-hover:text-primary-foreground/60">[</span>
@@ -153,7 +153,7 @@ const HUDElements = ({
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.5 }}
-        className="fixed top-6 right-6 z-20"
+        className="fixed top-6 right-6 z-20 hidden md:block"
       >
         <div className="hud-bracket p-4">
           <div className="text-xs text-muted-foreground font-mono mb-1">
@@ -170,7 +170,7 @@ const HUDElements = ({
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.5 }}
-        className="fixed top-6 left-6 z-20"
+        className="fixed top-6 left-6 z-20 hidden md:block"
       >
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 border border-primary/50 flex items-center justify-center">
@@ -187,7 +187,7 @@ const HUDElements = ({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7 }}
-        className="fixed bottom-6 left-6 z-20"
+        className="fixed bottom-6 left-6 z-20 hidden md:block"
       >
         <div className="flex items-center gap-3 px-4 py-2 bg-black/40 border border-white/10 rounded">
           <div className="status-dot" />
@@ -202,7 +202,7 @@ const HUDElements = ({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7 }}
-        className="fixed bottom-6 right-6 z-20"
+        className="fixed bottom-6 right-6 z-20 hidden md:block"
       >
         <div className="flex items-center gap-3 px-4 py-2 bg-black/40 border border-white/10 rounded">
           <Users className="w-4 h-4 text-primary" />
@@ -212,10 +212,10 @@ const HUDElements = ({
       </motion.div>
 
       {/* Crosshair decorations */}
-      <div className="fixed top-1/2 left-8 -translate-y-1/2 text-primary/20 text-2xl font-mono z-10">
+      <div className="fixed top-1/2 left-8 -translate-y-1/2 text-primary/20 text-2xl font-mono z-10 hidden md:block">
         +
       </div>
-      <div className="fixed top-1/2 right-8 -translate-y-1/2 text-primary/20 text-2xl font-mono z-10">
+      <div className="fixed top-1/2 right-8 -translate-y-1/2 text-primary/20 text-2xl font-mono z-10 hidden md:block">
         +
       </div>
     </>

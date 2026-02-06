@@ -7,9 +7,9 @@ const Footer = () => {
 
     return (
         // REDUCED HEIGHT: Changed pt-16 to pt-10 and pb-8 to pb-6
-        <footer id="contact" className="bg-[#020617] border-t border-white/10 pt-10 pb-6">
+        <footer id="contact" className="bg-[#020617] border-t border-white/10 pt-6 pb-6 md:pt-10">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-8">
 
                     {/* Left Column: Logo & Mission */}
                     <motion.div
@@ -87,10 +87,10 @@ const Footer = () => {
                         {/* MENU SECTION - LEFT ALIGNED */}
                         <div className="space-y-3 text-center md:text-left">
                             <h4 className="text-xs font-mono text-primary/60 mb-2 tracking-wider">[ MENU ]</h4>
-                            
+
                             {/* Fixed Home Link */}
-                            <Link 
-                                to="/" 
+                            <Link
+                                to="/"
                                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                 className="block text-sm font-mono text-muted-foreground hover:text-primary transition-colors"
                             >
@@ -100,11 +100,11 @@ const Footer = () => {
                             <button className="block w-full text-sm font-mono text-muted-foreground hover:text-primary transition-colors text-center md:text-left">
                                 Register
                             </button>
-                            
-                            <a 
-                                href="https://www.wcewlug.org/" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
+
+                            <a
+                                href="https://www.wcewlug.org/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="block text-sm font-mono text-muted-foreground hover:text-primary transition-colors"
                             >
                                 About Us
@@ -114,18 +114,18 @@ const Footer = () => {
                         {/* LEGAL SECTION - LEFT ALIGNED */}
                         <div className="space-y-3 text-center md:text-left">
                             <h4 className="text-xs font-mono text-primary/60 mb-2 tracking-wider">[ LEGAL ]</h4>
-                            <a 
-                                href="https://github.com/Walchand-Linux-Users-Group/gitbook/blob/wiki/policies/privacy-policy.md" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
+                            <a
+                                href="https://github.com/Walchand-Linux-Users-Group/gitbook/blob/wiki/policies/privacy-policy.md"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="block text-sm font-mono text-muted-foreground hover:text-primary transition-colors"
                             >
                                 Privacy Policy
                             </a>
-                            <a 
-                                href="https://github.com/Walchand-Linux-Users-Group/gitbook/blob/wiki/policies/terms-and-conditions.md" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
+                            <a
+                                href="https://github.com/Walchand-Linux-Users-Group/gitbook/blob/wiki/policies/terms-and-conditions.md"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="block text-sm font-mono text-muted-foreground hover:text-primary transition-colors"
                             >
                                 Terms & Conditions

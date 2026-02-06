@@ -26,7 +26,7 @@ const RecruitmentSection = ({ onOpenRegistration }: RecruitmentSectionProps) => 
                     {/* Glowing border effect */}
                     <div className="absolute -inset-[2px] bg-gradient-to-r from-transparent via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm" />
 
-                    <div className="bg-black/80 rounded-[22px] border border-white/5 p-8 md:p-16 relative overflow-hidden">
+                    <div className="bg-black/80 rounded-[22px] border border-white/5 p-6 md:p-16 relative overflow-hidden">
                         {/* Corner decorations */}
                         <div className="absolute top-4 left-4 text-primary/40"><Crosshair className="w-6 h-6" /></div>
                         <div className="absolute top-4 right-4 text-primary/40"><Crosshair className="w-6 h-6" /></div>
@@ -45,7 +45,7 @@ const RecruitmentSection = ({ onOpenRegistration }: RecruitmentSectionProps) => 
 
                         {/* Content */}
                         <div className="text-center space-y-6 max-w-3xl mx-auto">
-                            <h2 className="text-4xl md:text-6xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary bg-[length:200%_auto] animate-text-shimmer leading-tight pb-2">
+                            <h2 className="text-3xl md:text-6xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary bg-[length:200%_auto] animate-text-shimmer leading-tight pb-2">
                                 MEMBER BOARD 2
                             </h2>
 
