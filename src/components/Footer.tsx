@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Instagram, Linkedin, Github, Twitter, Disc } from "lucide-react";
+import { Instagram, Linkedin, Github, Twitter } from "lucide-react";
+import { FaDiscord } from "react-icons/fa";
 import { a } from "node_modules/framer-motion/dist/types.d-CQ4vRM6h";
 import { Link } from "react-router-dom";
 const Footer = () => {
@@ -32,8 +33,8 @@ const Footer = () => {
                         </a>
                         {/* Text Below Logo */}
                         {/* <div className="space-y-2"> */}
-                            {/* <h3 className="text-xl font-display font-bold text-white tracking-wider">WLUG ARCHITECTS</h3> */}
-                            {/* <div className="text-sm font-mono text-muted-foreground/80 space-y-1">
+                        {/* <h3 className="text-xl font-display font-bold text-white tracking-wider">WLUG ARCHITECTS</h3> */}
+                        {/* <div className="text-sm font-mono text-muted-foreground/80 space-y-1">
                                 <p className="text-primary/80 font-bold tracking-widest uppercase">
                                     COMMUNITY | KNOWLEDGE | SHARE
                                 </p>
@@ -59,7 +60,7 @@ const Footer = () => {
                                 { icon: Linkedin, href: "https://www.linkedin.com/company/wlug-club/" },
                                 { icon: Github, href: "https://github.com/Walchand-Linux-Users-Group" },
                                 { icon: Twitter, href: "https://mobile.twitter.com/wcewlug" },
-                                { icon: Disc, href: "https://discord.gg/FGcEpYuC" },
+                                { icon: FaDiscord, href: "https://discord.gg/FGcEpYuC" },
                             ].map((social, index) => (
                                 <a
                                     key={index}

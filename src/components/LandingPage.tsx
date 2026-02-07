@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Terminal, Cpu, Shield, Users, Zap } from "lucide-react";
+import { Terminal, Cpu, Shield, Users } from "lucide-react";
+import { FaInfinity } from "react-icons/fa";
 
 interface LandingPageProps {
   onScrollToRecruitment: () => void;
@@ -91,7 +92,7 @@ const LandingPage = ({ onScrollToRecruitment, isBlurred }: LandingPageProps) => 
           {[
             { icon: Cpu, text: "Linux Mastery" },
             { icon: Shield, text: "Open Source" },
-            { icon: Zap, text: "Innovation" },
+            { icon: FaInfinity, text: "DevOps" },
           ].map(({ icon: Icon, text }, index) => (
             <div
               key={index}
