@@ -26,15 +26,15 @@ const RecruitmentSection = ({ onOpenRegistration }: RecruitmentSectionProps) => 
                     {/* Glowing border effect */}
                     <div className="absolute -inset-[2px] bg-gradient-to-r from-transparent via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm" />
 
-                    <div className="bg-black/80 rounded-[22px] border border-white/5 p-6 md:p-16 relative overflow-hidden h-auto">
+                    <div className="bg-black/80 rounded-[22px] border border-white/5 p-10 md:p-16 relative overflow-hidden h-auto">
                         {/* Corner decorations */}
-                        <div className="absolute top-4 left-4 text-primary/40"><Crosshair className="w-6 h-6" /></div>
-                        <div className="absolute top-4 right-4 text-primary/40"><Crosshair className="w-6 h-6" /></div>
-                        <div className="absolute bottom-4 left-4 text-primary/40"><Crosshair className="w-6 h-6" /></div>
-                        <div className="absolute bottom-4 right-4 text-primary/40"><Crosshair className="w-6 h-6" /></div>
+                        <div className="absolute top-2 left-2 md:top-4 md:left-4 text-primary/40"><Crosshair className="w-4 h-4 md:w-6 md:h-6" /></div>
+                        <div className="absolute top-2 right-2 md:top-4 md:right-4 text-primary/40"><Crosshair className="w-4 h-4 md:w-6 md:h-6" /></div>
+                        <div className="absolute bottom-2 left-2 md:bottom-4 md:left-4 text-primary/40"><Crosshair className="w-4 h-4 md:w-6 md:h-6" /></div>
+                        <div className="absolute bottom-2 right-2 md:bottom-4 md:right-4 text-primary/40"><Crosshair className="w-4 h-4 md:w-6 md:h-6" /></div>
 
                         {/* Badge */}
-                        <div className="flex justify-center mb-8">
+                        <div className="flex justify-center mb-8 mt-6 md:mt-0">
                             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20">
                                 <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
                                 <span className="text-xs font-mono font-bold text-primary tracking-widest">
