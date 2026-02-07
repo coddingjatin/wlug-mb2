@@ -34,10 +34,10 @@ const RecruitmentSection = ({ onOpenRegistration }: RecruitmentSectionProps) => 
                         <div className="absolute bottom-2 right-2 md:bottom-4 md:right-4 text-primary/40"><Crosshair className="w-4 h-4 md:w-6 md:h-6" /></div>
 
                         {/* Badge */}
-                        <div className="flex justify-center mb-8 mt-6 md:mt-0">
+                        <div className="flex justify-center mb-8 mt-10 md:mt-0">
                             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20">
                                 <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                                <span className="text-xs font-mono font-bold text-primary tracking-widest">
+                                <span className="text-[10px] md:text-xs font-mono font-bold text-primary tracking-widest text-center">
                                     SYSTEM STATUS: RECRUITING
                                 </span>
                             </div>
