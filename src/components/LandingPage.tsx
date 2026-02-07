@@ -65,7 +65,7 @@ const LandingPage = ({ onScrollToRecruitment, isBlurred }: LandingPageProps) => 
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="text-3xl md:text-6xl font-bold font-display text-center mb-4 glitch-text cursor-default"
+          className="text-4xl md:text-6xl font-bold font-display text-center mb-4 glitch-text cursor-default"
         >
           <span className="text-glow">WALCHAND</span>
           <span className="text-secondary ml-4">LINUX USERS' GROUP</span>
