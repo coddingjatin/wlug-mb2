@@ -144,8 +144,7 @@ const LandingPage = ({ onScrollToRecruitment, isBlurred }: LandingPageProps) => 
           transition={{ delay: 0.4, duration: 0.6 }}
           className="text-3xl md:text-5xl font-bold font-display text-center mb-4 glitch-text cursor-default"
         >
-          <span className="text-glow">WALCHAND</span>
-          <span className="text-secondary ml-4">LINUX USERS' GROUP</span>
+          <span className="text-primary ml-4">WALCHAND LINUX USERS' GROUP</span>
         </motion.h1>
 
         {/* Subtext */}
@@ -155,7 +154,7 @@ const LandingPage = ({ onScrollToRecruitment, isBlurred }: LandingPageProps) => 
           transition={{ delay: 0.6, duration: 0.5 }}
           className="text-muted-foreground text-base md:text-lg font-mono text-center mb-8 max-w-2xl mx-auto"
         >
-          Join a vibrant community of Linux enthusiasts and master the World of Open Source.
+          Join a vibrant community of Linux enthusiasts and master the world of Open Source.
         </motion.p>
 
         {/* Feature pills */}

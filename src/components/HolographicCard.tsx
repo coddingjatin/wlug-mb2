@@ -127,7 +127,7 @@ const HolographicCard = () => {
           
           <div>
             <h2 className="text-2xl font-bold text-white tracking-wider mb-2 drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]">
-              REGISTRATION DONE
+              APPLIED SUCCESSFULLY
             </h2>
             <p className="text-cyan-400/80 text-sm font-mono tracking-widest">
               SYSTEM ACCESS GRANTED

@@ -56,11 +56,11 @@ const Footer = () => {
 
                         <div className="flex justify-center gap-4">
                             {[
-                                { icon: Instagram, href: "https://www.instagram.com/wcewlug?igsh=MXdya2IyNDBtbnBnbw==" },
+                                { icon: Instagram, href: "https://instagram.com/wcewlug" },
                                 { icon: Linkedin, href: "https://www.linkedin.com/company/wlug-club/" },
                                 { icon: Github, href: "https://github.com/Walchand-Linux-Users-Group" },
                                 { icon: Twitter, href: "https://mobile.twitter.com/wcewlug" },
-                                { icon: FaDiscord, href: "https://discord.gg/deAGWT8E4" },
+                                { icon: FaDiscord, href: "https://discord.wcewlug.org" },
                             ].map((social, index) => (
                                 <a
                                     key={index}
