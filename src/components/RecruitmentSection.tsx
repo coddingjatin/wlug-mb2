@@ -52,6 +52,14 @@ const RecruitmentSection = ({ onOpenRegistration }: RecruitmentSectionProps) => 
                             {/* <p className="text-lg md:text-xl text-muted-foreground font-mono max-w-2xl mx-auto leading-relaxed">
                                 AUTHENTICATE YOUR SKILLS.
                             </p> */}
+                            <div className="flex justify-center mb-6">
+                            <div className="px-4 py-2 rounded-md border border-red-500/30 bg-red-500/10">
+                                <span className="text-xs md:text-sm font-mono tracking-wider text-red-400">
+                                REGISTRATIONS CLOSING ON 14 FEBRUARY 2025
+                                </span>
+                            </div>
+                            </div>
+
 
                             <div className="w-full flex justify-center">
                                 <button
