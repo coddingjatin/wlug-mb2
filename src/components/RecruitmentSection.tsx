@@ -7,9 +7,7 @@ interface RecruitmentSectionProps {
 }
 
 const RecruitmentSection = ({ onOpenRegistration }: RecruitmentSectionProps) => {
-  // 🎯 Target: 14 FEB 2026 (23:59:59)
   const targetDate = new Date(2026, 1, 14, 23, 59, 59).getTime();
-
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -35,7 +33,7 @@ const RecruitmentSection = ({ onOpenRegistration }: RecruitmentSectionProps) => 
       });
     };
 
-    updateTimer(); // 🔥 instant render
+    updateTimer();
     const timer = setInterval(updateTimer, 1000);
 
     return () => clearInterval(timer);
@@ -53,7 +51,6 @@ const RecruitmentSection = ({ onOpenRegistration }: RecruitmentSectionProps) => 
       id="recruitment-section"
       className="relative min-h-[80vh] flex items-center justify-center py-20 px-4 overflow-hidden"
     >
-      {/* Background */}
       <div className="absolute inset-0 bg-black/40" />
       <div className="absolute top-0 w-full h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
 
@@ -65,11 +62,9 @@ const RecruitmentSection = ({ onOpenRegistration }: RecruitmentSectionProps) => 
         className="relative z-10 w-full max-w-5xl"
       >
         <div className="glass-card p-1 rounded-3xl overflow-hidden relative group">
-          {/* Glow */}
           <div className="absolute -inset-[2px] bg-gradient-to-r from-transparent via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm" />
 
           <div className="bg-black/80 rounded-[22px] border border-white/5 p-10 md:p-16 relative overflow-hidden">
-            {/* Corners */}
             <div className="absolute top-2 left-2 md:top-4 md:left-4 text-primary/40">
               <Crosshair className="w-4 h-4 md:w-6 md:h-6" />
             </div>
@@ -82,8 +77,6 @@ const RecruitmentSection = ({ onOpenRegistration }: RecruitmentSectionProps) => 
             <div className="absolute bottom-2 right-2 md:bottom-4 md:right-4 text-primary/40">
               <Crosshair className="w-4 h-4 md:w-6 md:h-6" />
             </div>
-
-            {/* Status badge */}
             <div className="flex justify-center mb-8 mt-10 md:mt-0">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20">
                 <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
@@ -99,7 +92,7 @@ const RecruitmentSection = ({ onOpenRegistration }: RecruitmentSectionProps) => 
                 MEMBER BOARD 2
               </h2>
 
-              {/* ⏳ Countdown */}
+              {/* Countdown */}
               <div className="px-6 py-4 rounded-md border border-red-500/30 bg-red-500/10 text-center">
                 <p className="text-xs md:text-sm font-mono tracking-wider text-red-400 mb-2">
                   APPLICATION CLOSES IN
