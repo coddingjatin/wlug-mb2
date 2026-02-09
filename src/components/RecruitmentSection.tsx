@@ -46,18 +46,19 @@ const RecruitmentSection = ({ onOpenRegistration }: RecruitmentSectionProps) => 
                         {/* Content */}
                         <div className="flex flex-col gap-8 items-center max-w-3xl mx-auto">
                             <h2 className="text-3xl md:text-6xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary bg-[length:200%_auto] animate-text-shimmer leading-tight text-center">
-                                MEMBER BOARD 2
+                                {/* MEMBER BOARD 2 */}
+                                MEMBER BOARD <span className="text-[2.5rem] md:text-[4.88rem] leading-none">2</span>
                             </h2>
 
                             {/* <p className="text-lg md:text-xl text-muted-foreground font-mono max-w-2xl mx-auto leading-relaxed">
                                 AUTHENTICATE YOUR SKILLS.
                             </p> */}
                             <div className="flex justify-center mb-6">
-                            <div className="px-4 py-2 rounded-md border border-red-500/30 bg-red-500/10">
-                                <span className="text-xs md:text-sm font-mono tracking-wider text-red-400">
-                                REGISTRATIONS CLOSING ON 14 FEBRUARY 2025
-                                </span>
-                            </div>
+                                <div className="px-4 py-2 rounded-md border border-red-500/30 bg-red-500/10">
+                                    <span className="text-xs md:text-sm font-mono tracking-wider text-red-400">
+                                        REGISTRATIONS CLOSING ON 14 FEBRUARY 2025
+                                    </span>
+                                </div>
                             </div>
 
 
